@@ -1,54 +1,85 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vbnbTt5m)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15311015&assignment_repo_type=AssignmentRepo)
-# Dev_Setup
-Setup Development Environment
+# Assignment: Setting Up Your Developer Environment
 
-#Assignment: Setting Up Your Developer Environment
+**1. Select Your Operating System (OS):**
+   I am using an entry level laptop therefore Windows 10 is prefereble for my laptop. You can Download and Install Windows here:       
+   (https://www.microsoft.com/software-download/)
 
-#Objective:
-This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration.
+**2. Install a Text Editor or Integrated Development Environment (IDE):**
+   I chose Visual Studio Code for my IDE because it supprts a wide range of programming languages and frameworks and it's also easy          to navigate and use. Download and Install Visual Studio Code (https://code.visualstudio.com/Download)
 
-#Tasks:
+**3. Set Up Version Control System:**
+   I had already created a GitHub account for hosting my projects before starting the programme and installed git and GitHub desktop         which i find easy to use unlike having to create the repository, commit and push it on GitBash.
+   To install Git go to (https://git-scm.com/download/win) and follow installation instructions.
+   To download and install GitHub Desktop go to (https://desktop.github.com/?      ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs) and follow instructions.
 
-1. Select Your Operating System (OS):
-   Choose an operating system that best suits your preferences and project requirements. Download and Install Windows 11. https://www.microsoft.com/software-download/windows11
+After installing Git, you need to configure your user information and some default settings. Open a terminal (Command Prompt or GitBash on your computer/ laptop).
 
-2. Install a Text Editor or Integrated Development Environment (IDE):
-   Select and install a text editor or IDE suitable for your programming languages and workflow. Download and Install Visual Studio Code. https://code.visualstudio.com/Download
-3. Set Up Version Control System:
-   Install Git and configure it on your local machine. Create a GitHub account for hosting your repositories. Initialize a Git repository for your project and make your first commit. https://github.com
+> Configuring Git:      
+    git config --global user.name "Your Name"
+    git config --global user.email "your.email@example.com"
 
-4. Install Necessary Programming Languages and Runtimes:
-  Instal Python from http://wwww.python.org programming language required for your project and install their respective compilers, interpreters, or runtimes. Ensure you have the necessary tools to build and execute your code.
+To verify the confiiguration: 
+   git config --list
 
-5. Install Package Managers:
-   If applicable, install package managers like pip (Python).
+> Creating a GitHub Account:
+    Go to (https://github.com) and follow instructions.
 
-6. Configure a Database (MySQL):
-   Download and install MySQL database. https://dev.mysql.com/downloads/windows/installer/5.7.html
+> Initialize a Git Repository:
+   Navigate to your project directory:
+      mkdir myproject
+      cd myproject
 
-7. Set Up Development Environments and Virtualization (Optional):
-   Consider using virtualization tools like Docker or virtual machines to isolate project dependencies and ensure consistent environments across different machines.
+> Initialize a new Git repository:
+    git init
 
-8. Explore Extensions and Plugins:
-   Explore available extensions, plugins, and add-ons for your chosen text editor or IDE to enhance functionality, such as syntax highlighting, linting, code formatting, and version control integration.
+> Create a new file:
+   echo "# My Project" > README.md
 
-9. Document Your Setup:
-    Create a comprehensive document outlining the steps you've taken to set up your developer environment. Include any configurations, customizations, or troubleshooting steps encountered during the process. 
+> Add files to the staging area:
+   git add README.md
+or add all files:
+   git add .
 
-#Deliverables:
-- Document detailing the setup process with step-by-step instructions and screenshots where necessary.
-- A GitHub repository containing a sample project initialized with Git and any necessary configuration files (e.g., .gitignore).
-- A reflection on the challenges faced during setup and strategies employed to overcome them.
+> Commit the files:
+   git commit -m "Initial commit"
 
-#Submission:
-Submit your document and GitHub repository link through the designated platform or email to the instructor by the specified deadline.
+> Link to the remote repository:
+   git remote add origin git@github.com:yourusername/your-repository.git
 
-#Evaluation Criteria:**
-- Completeness and accuracy of setup documentation.
-- Effectiveness of version control implementation.
-- Appropriateness of tools selected for the project requirements.
-- Clarity of reflection on challenges and solutions encountered.
-- Adherence to submission guidelines and deadlines.
+> Push to the remote repository:
+   git push -u origin master
 
-Note: Feel free to reach out for clarification or assistance with any aspect of the assignment.
+**5. Install Necessary Programming Languages and Runtimes:**
+   I installed Python from (http://wwww.python.org) and followed installation instructions and also made sure to check the option to add     Python to your PATH.
+
+**6. Install Package Managers:**
+from Command prompt
+ #Verify pip installation:
+    pip --version
+   
+ #Install or upgrade pip:
+    python -m pip install --upgrade pip.
+
+**8. Configure a Database (MySQL):**
+   I Downloaded and installed MySQL from (https://dev.mysql.com/downloads/windows/installer/5.7.html) and also downloaded mySQL              workbench.
+
+**9. Set Up Development Environments and Virtualization (Optional):**
+   I have not yet installed Virtualization tool as i have not yet need them, will download them when i need them for use.
+
+**10. Explore Extensions and Plugins:**
+   These are the extensions i installed on my VS Code:
+      -Code Runner
+      -Data Wrangler
+      -Prettier
+      -GitHub pull Requests
+      -Live Preview
+      -Live Server
+      -Live Share
+      -Matplotlib
+      -Pylance
+      -Python
+      -Python Debugger
+      -Python Image Preview
+      -GitLens
+      -Error Lens
+   
