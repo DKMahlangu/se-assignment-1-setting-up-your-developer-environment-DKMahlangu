@@ -10,7 +10,7 @@
 **3. Set Up Version Control System:**
    I had already created a GitHub account for hosting my projects before starting the programme and installed git and GitHub desktop         which i find easy to use unlike having to create the repository, commit and push it on GitBash.
    To install Git go to (https://git-scm.com/download/win) and follow installation instructions.
-   To download and install GitHub Desktop go to (https://desktop.github.com/?      ref_cta=download+desktop&ref_loc=installing+github+desktop&ref_page=docs) and follow instructions.
+   To download and install GitHub Desktop go to (https://desktop.github.com) and follow instructions.
 
 After installing Git, you need to configure your user information and some default settings. Open a terminal (Command Prompt or GitBash on your computer/ laptop).
 
